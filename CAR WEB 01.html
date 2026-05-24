@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoElite - Premium Car Showcase</title>
+    <link rel="stylesheet" href="CAR WEB 01.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">Rk Sons</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#featured">Featured</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Discover Premium Tiles Excellence</h1>
+            <p>Experience the best luxury tiles in Pakistan</p>
+            <a href="#gallery" class="cta-button">Explore Collection</a>
+        </div>
+    </section>
+
+    <section id="featured" class="featured-car">
+        <div class="container">
+            <img src="https://placehold.co/1200x600" alt="Luxury silver sports car with sleek aerodynamic design and modern LED headlights on scenic coastal road" class="car-image" id="featuredImage">
+            <div class="car-details">
+                <h2>2026 Premium Tiles Edition</h2>
+                <p>The ultimate combination of luxury, and cutting-edge technology.</p>
+                <div class="car-specs">
+                    <div class="spec">
+                        <div class="spec-number">Discount</div>
+                        <div class="spec-label">Price</div>
+                    </div>
+                    <div class="spec">
+                        <div class="spec-number">January</div>
+                        <div class="spec-label">Sales</div>
+                    </div>
+                    <div class="spec">
+                        <div class="spec-number">December</div>
+                        <div class="spec-label">Sales</div>
+                    </div>
+                </div>
+                <button class="cta-button" onclick="showModal('featuredImage')">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Our Premium Collection</h2>
+            <div class="cars-grid">
+                <div class="car-card" onclick="showModal('car1')">
+                    <img src="https://placehold.co/600x400" alt="Black luxury sedan with chrome accents and premium alloy wheels in urban setting" class="card-image" id="car1">
+                    <div class="card-content">
+                        <h3>BLACK</h3>
+                        <p>Premium comfort meets business class sophistication</p>
+                        <div class="price">From $99</div>
+                    </div>
+                </div>
+
+                <div class="car-card" onclick="showModal('car2')">
+                    <img src="https://placehold.co/600x400" alt="Red convertible sports car with top down driving through mountain roads" class="card-image" id="car2">
+                    <div class="card-content">
+                        <h3>BONE WHITE</h3>
+                        <p>Best color in Bone White Tiles</p>
+                        <div class="price">From $99</div>
+                    </div>
+                </div>
+
+                <div class="car-card" onclick="showModal('car3')">
+                    <img src="https://placehold.co/600x400" alt="White luxury SUV with panoramic sunroof and premium interior features in natural landscape" class="card-image" id="car3">
+                    <div class="card-content">
+                        <h3>Premium Shabbir</h3>
+                        <p>Luxury for your home</p>
+                        <div class="price">From $99</div>
+                    </div>
+                </div>
+
+                <div class="car-card" onclick="showModal('car4')">
+                    <img src="https://placehold.co/600x400" alt="Electric vehicle with futuristic design and blue accent lighting charging at modern station" class="card-image" id="car4">
+                    <div class="card-content">
+                        <h3>BLACK</h3>
+                        <p>Premium comfort meets business class sophistication</p>
+                        <div class="price">From $99</div>
+                    </div>
+                </div>
+
+                <div class="car-card" onclick="showModal('car5')">
+                    <img src="https://placehold.co/600x400" alt="Performance coupe with aggressive styling and carbon fiber elements on race track" class="card-image" id="car5">
+                    <div class="card-content">
+                        <h3>BONE WHITE</h3>
+                        <p>Track-inspired engineering for the driving enthusiast</p>
+                        <div class="price">From $99</div>
+                    </div>
+                </div>
+
+                <div class="car-card" onclick="showModal('car6')">
+                    <img src="https://placehold.co/600x400" alt="Classic vintage car restored to perfection with polished chrome and leather interior" class="card-image" id="car6">
+                    <div class="card-content">
+                        <h3>Premium Shabbir</h3>
+                        <p>Luxury for your home</p>
+                        <div class="price">From $99</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="carModal">
+        <button class="close-modal" onclick="closeModal()">×</button>
+        <div class="modal-content">
+            <img src="" alt="" class="modal-image" id="modalImage">
+            <h2 id="modalTitle">Tiles Details</h2>
+            <p id="modalDescription">Premium Tiles excellence</p>
+            <div class="price" id="modalPrice">$0</div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 RK SONS Premium Tiles. All rights reserved.</p>
+            <p>Experience the art of Luxury and Quality.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
